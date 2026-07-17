@@ -6,7 +6,7 @@ A single-stage conveyor belt mechanism designed in Fusion 360 — driven by a 30
 
 - **1x Gear** — 30-tooth pulley/gear, bored for a stepper motor shaft
 - **1x Belt** — toothed (timing-belt style) loop running the full length of the conveyor frame
-- **1x Stepper Motor** — drives the gear directly, mounted via a bracket at one end of the frame
+- **1x Stepper Motor** — drives the gear directly, mounted via a bracket at one end of the frame; 4-hole mounting face with connector pins for phase wiring
 
 ## Assembly
 
@@ -17,6 +17,16 @@ The gear sits on the stepper motor's shaft at one end of the frame; the belt wra
 ## Gear Detail
 
 ![30-tooth gear](media/gear_30_tooth_render.png)
+![Gear web view](media/gear_30_webview.png)
+
+## Stepper Motor
+
+![Stepper motor isometric](media/stepper_motor_iso.png)
+![Stepper motor front](media/stepper_motor_front.png)
+
+## Belt Detail
+
+![Belt bottom view](media/belt_bottom_view.png)
 
 ## Joint Configuration
 
@@ -34,6 +44,7 @@ Structure: `Gear(30):1`, `conveyor_belt_Assembly:1`, `Belt(240):1` — named and
 
 ```
 cad-exports/    Native Fusion 360 files (.f3z assembly, .f3d gear component)
+                plus Stepper_motor.step (standalone motor component)
 media/          Renders, joint configuration, and browser tree screenshots
 ```
 
